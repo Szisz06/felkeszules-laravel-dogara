@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Airline extends Model
 {
     use HasFactory;
-    protected $PrimaryKey = 'airline_id';
+    protected $primaryKey = 'airline_id';
     protected $fillable = [
         'name',
         'country'
