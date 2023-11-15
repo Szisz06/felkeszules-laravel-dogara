@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Airline extends Model
+class Flight extends Model
 {
     use HasFactory;
-    protected $PrimaryKey = 'airline_id';
+    protected $PrimaryKey = 'flight_id';
     protected $fillable = [
-        'name',
-        'country'
+        'date',
+        'airline_id',
+        'limit'
     ];
 }
