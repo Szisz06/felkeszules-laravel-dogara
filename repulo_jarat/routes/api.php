@@ -21,3 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('airlines', [AirlineController::class, 'index']);
 Route::get('airlines/{id}', [AirlineController::class, 'show']);
+Route::post('airlines', [AirlineController::class, 'store']);
+Route::put('airlines/{id}', [AirlineController::class, 'update']);
+Route::delete('airlines/{id}', [AirlineController::class, 'destroy']);
